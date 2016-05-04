@@ -11,6 +11,7 @@ public class Main {
         tree.insert(new Node(3, "captain America"));
         tree.insert(new Node(4, "hulk"));
 
+        tree.remove(3);
         tree.traverseTreeinOrder(root);
     }
 }

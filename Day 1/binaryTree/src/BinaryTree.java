@@ -38,6 +38,22 @@ public class BinaryTree {
         }
     }
 
+    public boolean remove(int key) {
+        if (root == null) {
+            return false;
+        } else {
+            if (root.getKey() == key) {
+                Node auxRoot = new Node(0);
+                auxRoot.setLeftChild(root);
+                boolean result = root.remove(key, auxRoot);
+                root = auxRoot.getLeftChild();
+                return result;
+            } else {
+                return root.remove(key, null);
+            }
+        }
+    }
+
     public void traverseTreeinOrder(Node currentNode) {
         if (currentNode != null) {
             traverseTreeinOrder(currentNode.getLeftChild());
