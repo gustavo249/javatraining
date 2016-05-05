@@ -1,4 +1,4 @@
-package items;
+package artefacts;
 
 /**
  * Created by Gustavo on 11/04/2016.

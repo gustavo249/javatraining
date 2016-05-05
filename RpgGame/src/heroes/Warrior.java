@@ -1,8 +1,8 @@
 package heroes;
 
-import items.ArmourPiece;
-import items.Inventory;
-import items.Weapon;
+import artefacts.ArmourPiece;
+import artefacts.Inventory;
+import artefacts.Weapon;
 
 /**
  * Created by Gustavo on 11/04/2016.

@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb77a90-13c8-4be8-b83a-556ac9d94091" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/heroes/Hero.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Day 1/binaryTree/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Day 1/binaryTree/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Day 1/quickSortForStrings/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Day 1/quickSortForStrings/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/heroes/Hero.java" afterPath="$PROJECT_DIR$/src/heroes/Hero.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/heroes/Ninja.java" afterPath="$PROJECT_DIR$/src/heroes/Ninja.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/heroes/Shaman.java" afterPath="$PROJECT_DIR$/src/heroes/Shaman.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/heroes/Warrior.java" afterPath="$PROJECT_DIR$/src/heroes/Warrior.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/items/ArmourPiece.java" afterPath="$PROJECT_DIR$/src/artefacts/ArmourPiece.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/items/Inventory.java" afterPath="$PROJECT_DIR$/src/artefacts/Inventory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/items/Weapon.java" afterPath="$PROJECT_DIR$/src/artefacts/Weapon.java" />
     </list>
     <ignored path="rpgGame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,7 +68,7 @@
         </entry>
       </file>
       <file leaf-file-name="Weapon.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/items/Weapon.java">
+        <entry file="file://$PROJECT_DIR$/src/artefacts/Weapon.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -72,7 +78,7 @@
         </entry>
       </file>
       <file leaf-file-name="Inventory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/items/Inventory.java">
+        <entry file="file://$PROJECT_DIR$/src/artefacts/Inventory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
@@ -116,7 +122,6 @@
         <option value="$PROJECT_DIR$/src/items/Artifact.java" />
         <option value="$PROJECT_DIR$/src/game/Character.java" />
         <option value="$PROJECT_DIR$/src/heroes/Ninja.java" />
-        <option value="$PROJECT_DIR$/src/heroes/Hero.java" />
         <option value="$PROJECT_DIR$/src/heroes/Shaman.java" />
         <option value="$PROJECT_DIR$/src/heroes/Warrior.java" />
         <option value="$PROJECT_DIR$/src/monsters/Monster.java" />
@@ -124,6 +129,7 @@
         <option value="$PROJECT_DIR$/src/monsters/Undead.java" />
         <option value="$PROJECT_DIR$/src/monsters/Orc.java" />
         <option value="$PROJECT_DIR$/src/monsters/Elf.java" />
+        <option value="$PROJECT_DIR$/src/heroes/Hero.java" />
       </list>
     </option>
   </component>
@@ -245,24 +251,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="items" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rpgGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RpgGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="heroes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -300,6 +288,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpgGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RpgGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artefacts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -769,16 +775,16 @@
       <option name="number" value="Default" />
       <updated>1462370579990</updated>
       <workItem from="1462370581330" duration="3351000" />
-      <workItem from="1462442235231" duration="5125000" />
+      <workItem from="1462442235231" duration="5310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8476000" />
+    <option name="totallyTimeSpent" value="8661000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1096" extended-state="7" />
-    <editor active="true" />
+    <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -790,7 +796,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28064844" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17760417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17760417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -896,7 +902,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/items/Inventory.java">
+    <entry file="file://$PROJECT_DIR$/src/artefacts/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
@@ -904,7 +910,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/items/ArmourPiece.java">
+    <entry file="file://$PROJECT_DIR$/src/artefacts/ArmourPiece.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -964,7 +970,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/items/ArmourPiece.java">
+    <entry file="file://$PROJECT_DIR$/src/artefacts/ArmourPiece.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
@@ -972,7 +978,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/items/Weapon.java">
+    <entry file="file://$PROJECT_DIR$/src/artefacts/Weapon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -980,7 +986,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/items/Inventory.java">
+    <entry file="file://$PROJECT_DIR$/src/artefacts/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />

@@ -2,7 +2,7 @@ package heroes;
 
 import battle.system.FightingBehavior;
 import game.Character;
-import items.Inventory;
+import artefacts.Inventory;
 import monsters.Monster;
 
 import java.util.Random;
