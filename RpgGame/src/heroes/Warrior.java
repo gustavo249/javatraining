@@ -1,6 +1,7 @@
 package heroes;
 
 import artefacts.ArmourPiece;
+import artefacts.ArmourType;
 import artefacts.Inventory;
 import artefacts.Weapon;
 
@@ -11,8 +12,8 @@ public class Warrior extends Hero {
 
     public Warrior(String name) {
         super(name, 20, 40, 20, 15,
-                new Inventory(new Weapon(20), new ArmourPiece(40, "Steel plate"),
-                new ArmourPiece(5, "Iron helmet"), new ArmourPiece(8, "Iron boots"),
-                new ArmourPiece(5, "Iron gauntlets")));
+                new Inventory(new Weapon(20), new ArmourPiece(40, ArmourType.ARMOUR),
+                new ArmourPiece(5, ArmourType.HELMET), new ArmourPiece(8, ArmourType.BOOTS),
+                new ArmourPiece(5, ArmourType.GAUNTLETS)));
     }
 }

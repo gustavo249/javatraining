@@ -8,7 +8,7 @@ import races.MonsterRaces;
  */
 public class Orc extends Monster {
     public Orc() {
-        super(MonsterRaces.ORC, 40, 40, 20, 20);
+        super(MonsterRaces.ORC, 20, 40, 20, 20);
     }
 
     @Override

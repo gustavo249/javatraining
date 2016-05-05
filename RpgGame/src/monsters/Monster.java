@@ -14,12 +14,8 @@ public  class Monster extends Character implements FightingBehavior {
     protected MonsterRaces race;
 
     public Monster(MonsterRaces race, int strength, int defense, int agility, int intelligence) {
-        super(1, 100, strength, defense, agility, intelligence);
+        super(strength, defense, agility, intelligence);
         this.race = race;
-        this.level = 1;
-        this.hitPoints = 1000 + level * 10;
-        this.strength = strength + level;
-        this.defense = defense + level;
     }
 
     @Override
@@ -52,40 +48,8 @@ public  class Monster extends Character implements FightingBehavior {
     }
 
     public void castSpell(Hero enemy) {
-        int variance = new Random().nextInt(80 - 60) + 60;
-        attack(variance + level, enemy);
-    }
-
-    public int getLevel() {
-        return level;
-    }
-
-    public void setLevel(int level) {
-        this.level = level;
-    }
-
-    public int getHitPoints() {
-        return hitPoints;
-    }
-
-    public void setHitPoints(int hitPoints) {
-        this.hitPoints = hitPoints;
-    }
-
-    public int getStrength() {
-        return strength;
-    }
-
-    public void setStrength(int strength) {
-        this.strength = strength;
-    }
-
-    public int getDefense() {
-        return defense;
-    }
-
-    public void setDefense(int defense) {
-        this.defense = defense;
+        int variance = new Random().nextInt(100 - 80) + 80;
+        attack(variance + level * 5, enemy);
     }
 
     public MonsterRaces getRace() {

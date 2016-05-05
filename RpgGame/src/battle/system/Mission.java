@@ -5,19 +5,19 @@ import heroes.Ninja;
 import heroes.Shaman;
 import heroes.Warrior;
 import monsters.*;
-import races.HeroRaces;
 
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 /**
  * Created by Gustavo on 11/04/2016.
  */
-public class Game {
+public class Mission {
 
-    static Scanner scanner = new Scanner(System.in);
-    static boolean exit = false;
+    private static Scanner scanner = new Scanner(System.in);
+    private static boolean exit = false;
+    private static Hero hero;
+
 
     /**
      * The starting point of the game where the user chooses an option either to create a new hero
@@ -77,7 +77,9 @@ public class Game {
             String description = "You are in love with a beautiful princess " +
                     "and your purpose is to get to the castle and marry her, but the road is full of danger\n";
 
-            System.out.println(description);
+            if (hero.getLevel() == 1) {
+                System.out.println(description);
+            }
             Thread.sleep(3500);
             hero.move();
             Thread.sleep(3500);
@@ -128,6 +130,8 @@ public class Game {
                 monster = new Undead();
                 break;
         }
+        assert monster != null;
+        monster.setLevel(hero.getLevel());
         return monster;
     }
 
@@ -163,23 +167,23 @@ public class Game {
         if (choice == 1 || choice == 2 || choice == 3) {
             System.out.println("Now, please provide a name for your hero: ");
             name = scanner.next();
-        }  else {
+        } else {
             System.err.println("Invalid choice please try creating the hero again");
             return null;
         }
         if (choice == 1) {
             System.out.println("Your hero has been created, welcome " + name +
                     " you\'ll be a great warrior now you can start a new adventure");
-            return new Warrior(name);
+            hero = new Warrior(name);
         } else if (choice == 2) {
             System.out.println("Good choice for a ninja, welcome " + name +
                     " now you can start a new adventure");
-            return new Ninja(name);
+            hero = new Ninja(name);
         } else if (choice == 3) {
             System.out.println("Smart decision future shaman ! Good luck " + name + "" +
                     " now you can start a new adventure");
-            return new Shaman(name);
+            hero = new Shaman(name);
         }
-        return null;
+        return hero;
     }
 }

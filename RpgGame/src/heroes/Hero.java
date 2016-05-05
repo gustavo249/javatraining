@@ -17,13 +17,8 @@ public class Hero extends Character implements FightingBehavior {
 
     public Hero(String name,  int strength, int defense, int agility, int intelligence,
     Inventory inventory) {
-        super(1, 100, strength, defense, agility, intelligence);
+        super(strength, defense, agility, intelligence);
         this.name = name;
-        this.level = 1;
-        this.hitPoints = 1000 + (level * 10);
-        this.strength = strength + level;
-        this.defense = defense + level;
-        this.intelligence = intelligence + level;
         this.inventory = inventory;
     }
 
@@ -67,44 +62,13 @@ public class Hero extends Character implements FightingBehavior {
         this.name = name;
     }
 
-    public int getLevel() {
-        return level;
+    public Inventory getInventory() {
+        return inventory;
     }
 
-    public void setLevel(int level) {
-        this.level = level;
-    }
-
-    public int getHitPoints() {
-        return hitPoints;
-    }
-
-    public void setHitPoints(int hitPoints) {
-        this.hitPoints = hitPoints;
-    }
-
-    public int getStrength() {
-        return strength;
-    }
-
-    public void setStrength(int strength) {
-        this.strength = strength;
-    }
-
-    public int getDefense() {
-        return defense;
-    }
-
-    public void setDefense(int defense) {
-        this.defense = defense;
-    }
-
-    public int getIntelligence() {
-        return intelligence;
-    }
-
-    public void setIntelligence(int intelligence) {
-        this.intelligence = intelligence;
+    @Override
+    public int getId() {
+        return super.getId();
     }
 
     @Override

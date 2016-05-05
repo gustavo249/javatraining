@@ -1,6 +1,6 @@
 
 
-import battle.system.Game;
+import battle.system.Mission;
 
 /**
  * Created by Gustavo on 11/04/2016.
@@ -8,7 +8,7 @@ import battle.system.Game;
 public class Main {
     public static void main(String[] args) {
         try {
-            Game.start();
+            Mission.start();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

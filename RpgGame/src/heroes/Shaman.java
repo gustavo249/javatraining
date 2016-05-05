@@ -7,8 +7,8 @@ import artefacts.*;
  */
 public class Shaman extends Hero {
     public Shaman(String name) {
-        super(name, 10, 20, 20, 30, new Inventory(new Weapon(12), new ArmourPiece(25, "Cotton plate"),
-                new ArmourPiece(2, "Cotton helmet"), new ArmourPiece(3, "Cotton boots"),
-                new ArmourPiece(2, "Cotton gauntlets")));
+        super(name, 10, 20, 20, 30, new Inventory(new Weapon(12), new ArmourPiece(25, ArmourType.ARMOUR),
+                new ArmourPiece(2, ArmourType.HELMET), new ArmourPiece(3, ArmourType.BOOTS),
+                new ArmourPiece(2, ArmourType.GAUNTLETS)));
     }
 }
