@@ -1,7 +1,5 @@
 package game;
 
-import artefacts.Item;
-
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -19,12 +17,21 @@ public abstract class Character {
 
     public Character(int strength, int defense, int agility, int intelligence) {
         this.level = 1;
-        this.hitPoints = 1000 + (level * 100);
-        this.strength = strength + level * 7;
-        this.defense = defense + level * 2;
-        this.intelligence = intelligence + level * 2;
-        this.agility = agility + level;
+        this.hitPoints = 1000;
+        this.strength = strength;
+        this.defense = defense;
+        this.intelligence = intelligence;
+        this.agility = agility;
         this.id = count.incrementAndGet();
+    }
+
+    public void updateCharacter() {
+        hitPoints = hitPoints + (level * 100);
+        strength = strength + (level * 2);
+        defense = defense + (level * 3);
+        intelligence = intelligence + (level * 2);
+        agility = agility + (level * 2);
+
     }
 
     @Override

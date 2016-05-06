@@ -41,8 +41,7 @@ public class Hero extends Character implements FightingBehavior {
 
     private int calculateDamage() {
         int variance = new Random().nextInt(1800 - 1600) + 1600;
-        int damage = (strength * level + variance) / 7;
-        return damage;
+        return (strength * level + variance) / 7;
     }
 
     @Override

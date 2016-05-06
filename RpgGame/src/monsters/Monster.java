@@ -37,7 +37,6 @@ public  class Monster extends Character implements FightingBehavior {
 
         System.out.println(hero.getName() + " has " + hero.getHitPoints() + " hp left ");
     }
-
     public void attack(int damage, Hero hero) {
         System.out.println(race + " dealt " + damage + " with a special ability");
         hero.setHitPoints(hero.getHitPoints() - damage);

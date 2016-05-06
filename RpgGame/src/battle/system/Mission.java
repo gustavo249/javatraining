@@ -132,6 +132,7 @@ public class Mission {
         }
         assert monster != null;
         monster.setLevel(hero.getLevel());
+        monster.updateCharacter();
         return monster;
     }
 

@@ -45,10 +45,12 @@ public class Battle {
             if (monsterDroppedAnItem()) {
                 dropSystem(hero, monster);
             }
+            hero.setLevel(hero.getLevel() + 1); //incrementing the level of our hero
+            hero.updateCharacter();
+            initialHitPoints = hero.getHitPoints();
         }
 
         hero.setHitPoints(initialHitPoints); //resetting HP again in order to start a new Battle later
-        hero.setLevel(hero.getLevel() + 1); //incrementing the level of our hero
         System.out.println("\nPress 3 to begin a new adventure or 5 to quit the game");
     }
 
