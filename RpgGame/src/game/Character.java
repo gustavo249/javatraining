@@ -27,6 +27,25 @@ public abstract class Character {
         this.id = count.incrementAndGet();
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (obj instanceof Character) {
+            Character anotherCharacter = (Character) obj;
+            if (anotherCharacter.getId() == this.id) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return id;
+    }
+
     public int getId() {
         return id;
     }
