@@ -1,9 +1,11 @@
 package artefacts;
 
+import java.io.Serializable;
+
 /**
  * Created by Gustavo on 11/04/2016.
  */
-public class Weapon  extends Item{
+public class Weapon  extends Item {
     private int damage;
 
     public Weapon(int damage){

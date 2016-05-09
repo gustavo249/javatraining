@@ -5,6 +5,7 @@ import game.Character;
 import artefacts.Inventory;
 import monsters.Monster;
 
+import java.io.Serializable;
 import java.util.Random;
 
 /**
@@ -30,18 +31,6 @@ public class Hero extends Character implements FightingBehavior {
     @Override
     public void dodge() {
         System.out.println(name + " managed to dodge the deadly blow");
-    }
-
-    public void attack(Monster monster) {
-        int totalDamage = calculateDamage() - monster.getDefense();
-        System.out.println(name + " dealt " + totalDamage + " to " + monster.getRace());
-        monster.setHitPoints(monster.getHitPoints() - totalDamage);
-        System.out.println(monster.getRace() + " has " + monster.getHitPoints() + " hp left ");
-    }
-
-    private int calculateDamage() {
-        int variance = new Random().nextInt(1800 - 1600) + 1600;
-        return (strength * level + variance) / 7;
     }
 
     @Override

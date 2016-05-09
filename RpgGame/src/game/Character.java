@@ -1,11 +1,16 @@
 package game;
 
+import heroes.Hero;
+import monsters.Monster;
+
+import java.io.Serializable;
+import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Created by Gustavo on 05/05/2016.
  */
-public abstract class Character {
+public abstract class Character implements Serializable {
     private static final AtomicInteger count = new AtomicInteger(0);
     protected final int id;
     protected int level;
@@ -31,6 +36,30 @@ public abstract class Character {
         defense = defense + (level * 3);
         intelligence = intelligence + (level * 2);
         agility = agility + (level * 2);
+
+    }
+
+    public void attack(Character attacker, Character defender) {
+        Random r = new Random();
+        Hero hero;
+        Monster monster;
+
+        int variance = r.nextInt(1800 - 1600) + 1600;
+        int totalDamage = (strength * level + variance) / 6 - defender.getDefense();
+
+        if (attacker instanceof Monster) {
+            monster = (Monster) attacker;
+            hero = (Hero) defender;
+            System.out.println((monster.getRace()+ " caused " + totalDamage + " damage to " + hero.getName()));
+            hero.setHitPoints(hero.getHitPoints() - totalDamage);
+            System.out.println(hero.getName() + " has " + hero.getHitPoints() + " hp left ");
+        } else if (attacker instanceof Hero) {
+            hero = (Hero) attacker;
+            monster = (Monster) defender;
+            System.out.println(hero.getName() + " dealt " + totalDamage + " to " + monster.getRace());
+            monster.setHitPoints(monster.getHitPoints() - totalDamage);
+            System.out.println(monster.getRace() + " has " + monster.getHitPoints() + " hp left ");
+        }
 
     }
 
@@ -97,4 +126,11 @@ public abstract class Character {
         this.intelligence = intelligence;
     }
 
+    public int getAgility() {
+        return agility;
+    }
+
+    public void setAgility(int agility) {
+        this.agility = agility;
+    }
 }

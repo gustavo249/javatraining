@@ -1,12 +1,13 @@
 package artefacts;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Gustavo on 11/04/2016.
  */
-public class Inventory {
+public class Inventory implements Serializable  {
     private List<Item> additionalItems = new ArrayList<>();
     private int gold;
     private Weapon weapon;
@@ -61,5 +62,61 @@ public class Inventory {
                 ", boots=" + boots +
                 ", gauntlets=" + gauntlets +
                 '}';
+    }
+
+    public List<Item> getAdditionalItems() {
+        return additionalItems;
+    }
+
+    public void setAdditionalItems(List<Item> additionalItems) {
+        this.additionalItems = additionalItems;
+    }
+
+    public int getGold() {
+        return gold;
+    }
+
+    public void setGold(int gold) {
+        this.gold = gold;
+    }
+
+    public Weapon getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
+    }
+
+    public ArmourPiece getPlate() {
+        return plate;
+    }
+
+    public void setPlate(ArmourPiece plate) {
+        this.plate = plate;
+    }
+
+    public ArmourPiece getHelmet() {
+        return helmet;
+    }
+
+    public void setHelmet(ArmourPiece helmet) {
+        this.helmet = helmet;
+    }
+
+    public ArmourPiece getBoots() {
+        return boots;
+    }
+
+    public void setBoots(ArmourPiece boots) {
+        this.boots = boots;
+    }
+
+    public ArmourPiece getGauntlets() {
+        return gauntlets;
+    }
+
+    public void setGauntlets(ArmourPiece gauntlets) {
+        this.gauntlets = gauntlets;
     }
 }

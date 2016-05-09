@@ -1,5 +1,6 @@
 package battle.system;
 
+import game.History;
 import heroes.Hero;
 import heroes.Ninja;
 import heroes.Shaman;
@@ -28,10 +29,10 @@ public class Mission {
      * @throws InterruptedException
      */
     public static void start() throws InterruptedException {
-        String options = "1.Print menu\n2.Create a new hero\n3.Begin adventure\n" +
-                "4.See your character\n5.Exit game";
+        String options = "1.Print menu\n2.Create a new hero\n3.SaveGame\n4.Load game\n5.Begin adventure\n" +
+                "6.See your character\n7.Exit game";
         System.out.println(options);
-        Hero hero = null;
+        hero = null;
 
         while (!exit) {
             int choice = scanner.nextInt();
@@ -44,12 +45,18 @@ public class Mission {
                     hero = createNewHero();
                     break;
                 case 3:
-                    beginAdventure(hero);
+                    History.saveHero(hero);
                     break;
                 case 4:
-                    seeYourHero(hero);
+                    hero = History.readHero();
                     break;
                 case 5:
+                    beginAdventure(hero);
+                    break;
+                case 6:
+                    seeYourHero(hero);
+                    break;
+                case 7:
                     exit = true;
                     break;
             }

@@ -51,7 +51,7 @@ public class Battle {
         }
 
         hero.setHitPoints(initialHitPoints); //resetting HP again in order to start a new Battle later
-        System.out.println("\nPress 3 to begin a new adventure or 5 to quit the game");
+        System.out.println("\nPress 5 to begin a new adventure or 7 to quit the game");
     }
 
     private static void dropSystem(Hero hero, Monster monster) {
@@ -100,7 +100,7 @@ public class Battle {
         if (dodgeChance == 3) {
             monster.dodge();
         } else {
-            hero.attack(monster);
+            hero.attack(hero, monster);
         }
 
         System.out.println();
@@ -113,7 +113,7 @@ public class Battle {
             //if the hero didn't dodged he is either targeted with a spell or with normal attack
         } else {
             if (decision == 1) {
-                monster.attack(hero);
+                monster.attack(monster, hero);
             } else {
                 monster.castSpell(hero);
             }
