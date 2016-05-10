@@ -51,7 +51,6 @@ public class Battle {
         }
 
         hero.setHitPoints(initialHitPoints); //resetting HP again in order to start a new Battle later
-        System.out.println("\nPress 5 to begin a new adventure or 7 to quit the game");
     }
 
     private static void dropSystem(Hero hero, Monster monster) {

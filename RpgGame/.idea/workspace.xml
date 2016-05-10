@@ -2,53 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb77a90-13c8-4be8-b83a-556ac9d94091" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/hero" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ro/academy/controller/system/HeroDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ro/academy/controller/view/controllers/HeroController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ro/academy/controller/view/controllers/HomeController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ro/academy/controller/view/controllers/MenuController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ro/academy/view/createHero.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ro/academy/view/menu.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ro/academy/view/seeYourHero.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ro/academy/view/welcomeScreen.fxml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RpgGame/battle/system/Battle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RpgGame/battle/system/FightingBehavior.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RpgGame/game/Character.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RpgGame/heroes/Hero.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RpgGame/heroes/Ninja.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RpgGame/heroes/Shaman.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RpgGame/heroes/Warrior.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RpgGame/monsters/Elf.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RpgGame/monsters/Monster.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RpgGame/monsters/Orc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RpgGame/monsters/Skeleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RpgGame/monsters/Undead.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RpgGame/races/HeroRaces.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RpgGame/races/MonsterRaces.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RpgGame/Main.class" afterPath="$PROJECT_DIR$/out/production/RpgGame/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/artefacts/ArmourPiece.java" afterPath="$PROJECT_DIR$/src/ro/academy/model/artefacts/ArmourPiece.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/artefacts/ArmourType.java" afterPath="$PROJECT_DIR$/src/ro/academy/model/artefacts/ArmourType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/artefacts/Inventory.java" afterPath="$PROJECT_DIR$/src/ro/academy/model/artefacts/Inventory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/artefacts/Item.java" afterPath="$PROJECT_DIR$/src/ro/academy/model/artefacts/Item.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/artefacts/Weapon.java" afterPath="$PROJECT_DIR$/src/ro/academy/model/artefacts/Weapon.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/battle/system/Battle.java" afterPath="$PROJECT_DIR$/src/ro/academy/controller/battle/Battle.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/battle/system/FightingBehavior.java" afterPath="$PROJECT_DIR$/src/ro/academy/controller/battle/FightingBehavior.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/battle/system/Mission.java" afterPath="$PROJECT_DIR$/src/ro/academy/controller/battle/Mission.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/game/Character.java" afterPath="$PROJECT_DIR$/src/ro/academy/model/base/Character.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/game/History.java" afterPath="$PROJECT_DIR$/src/ro/academy/model/base/History.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/heroes/Hero.java" afterPath="$PROJECT_DIR$/src/ro/academy/model/heroes/Hero.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/heroes/Ninja.java" afterPath="$PROJECT_DIR$/src/ro/academy/model/heroes/Ninja.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/heroes/Shaman.java" afterPath="$PROJECT_DIR$/src/ro/academy/model/heroes/Shaman.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/heroes/Warrior.java" afterPath="$PROJECT_DIR$/src/ro/academy/model/heroes/Warrior.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/monsters/Elf.java" afterPath="$PROJECT_DIR$/src/ro/academy/model/monsters/Elf.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/monsters/Monster.java" afterPath="$PROJECT_DIR$/src/ro/academy/model/monsters/Monster.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/monsters/Orc.java" afterPath="$PROJECT_DIR$/src/ro/academy/model/monsters/Orc.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/monsters/Skeleton.java" afterPath="$PROJECT_DIR$/src/ro/academy/model/monsters/Skeleton.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/monsters/Undead.java" afterPath="$PROJECT_DIR$/src/ro/academy/model/monsters/Undead.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/races/HeroRaces.java" afterPath="$PROJECT_DIR$/src/ro/academy/model/races/HeroRaces.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/races/MonsterRaces.java" afterPath="$PROJECT_DIR$/src/ro/academy/model/races/MonsterRaces.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ro/academy/controller/battle/Battle.java" afterPath="$PROJECT_DIR$/src/ro/academy/controller/battle/Battle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ro/academy/controller/battle/Mission.java" afterPath="$PROJECT_DIR$/src/ro/academy/controller/battle/Mission.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ro/academy/controller/view/controllers/MenuController.java" afterPath="$PROJECT_DIR$/src/ro/academy/controller/view/controllers/MenuController.java" />
     </list>
     <ignored path="rpgGame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/src/ro/academy/controller/view/controllers/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#979#980#0" expanded="true" />
@@ -100,12 +57,12 @@
       <file leaf-file-name="MenuController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ro/academy/controller/view/controllers/MenuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50364965">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5922836">
+              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#868#869#0" expanded="true" />
-                <element signature="e#932#933#0" expanded="true" />
+                <element signature="e#1054#1055#0" expanded="true" />
+                <element signature="e#1118#1119#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,8 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/races/HeroRaces.java" />
-        <option value="$PROJECT_DIR$/src/races/MonsterRaces.java" />
         <option value="$PROJECT_DIR$/src/battle/system/FightingBehavior.java" />
         <option value="$PROJECT_DIR$/src/battle/system/Game.java" />
         <option value="$PROJECT_DIR$/src/items/Attribute.java" />
@@ -177,12 +132,14 @@
         <option value="$PROJECT_DIR$/resources/hero" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/ro/academy/controller/system/HeroDAO.java" />
-        <option value="$PROJECT_DIR$/src/ro/academy/controller/view/controllers/HomeController.java" />
         <option value="$PROJECT_DIR$/src/ro/academy/model/heroes/Ninja.java" />
         <option value="$PROJECT_DIR$/src/ro/academy/model/heroes/Shaman.java" />
         <option value="$PROJECT_DIR$/src/ro/academy/model/heroes/Warrior.java" />
         <option value="$PROJECT_DIR$/src/ro/academy/model/heroes/Hero.java" />
         <option value="$PROJECT_DIR$/src/ro/academy/controller/view/controllers/MenuController.java" />
+        <option value="$PROJECT_DIR$/src/ro/academy/controller/view/controllers/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/ro/academy/controller/battle/Mission.java" />
+        <option value="$PROJECT_DIR$/src/ro/academy/controller/battle/Battle.java" />
       </list>
     </option>
   </component>
@@ -345,10 +302,6 @@
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -369,6 +322,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="battle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -874,7 +831,7 @@
       <workItem from="1462794770760" duration="1217000" />
       <workItem from="1462802240566" duration="3532000" />
       <workItem from="1462861922655" duration="8877000" />
-      <workItem from="1462874775632" duration="1239000" />
+      <workItem from="1462874775632" duration="3799000" />
     </task>
     <task id="LOCAL-00001" summary="Changes from day 3 , great game :D">
       <created>1462474291167</created>
@@ -906,15 +863,21 @@
       <option name="project" value="LOCAL" />
       <updated>1462795473665</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="GUI implemented , radical changes to the game">
+      <created>1462876055056</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1462876055056</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48211000" />
+    <option name="totallyTimeSpent" value="50771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -926,7 +889,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5420466" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.128125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.128125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -982,7 +945,8 @@
     <MESSAGE value="change hash code and equals for character" />
     <MESSAGE value="some minor changes, but overall it's done :()" />
     <MESSAGE value="now users are able to save the game" />
-    <option name="LAST_COMMIT_MESSAGE" value="now users are able to save the game" />
+    <MESSAGE value="GUI implemented , radical changes to the game" />
+    <option name="LAST_COMMIT_MESSAGE" value="GUI implemented , radical changes to the game" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1331,6 +1295,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1576507">
           <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1409,7 +1374,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1448,37 +1413,7 @@
         <state vertical-scroll-proportion="0.17726798">
           <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ro/academy/controller/battle/Battle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0177268">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ro/academy/controller/view/controllers/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ro/academy/controller/battle/Mission.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3368092">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1493,14 +1428,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ro/academy/controller/view/controllers/MenuController.java">
+    <entry file="file://$PROJECT_DIR$/src/ro/academy/controller/view/controllers/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50364965">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ro/academy/controller/battle/Battle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77997917">
+          <caret line="52" column="102" selection-start-line="52" selection-start-column="102" selection-end-line="52" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ro/academy/controller/battle/Mission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.10636079">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ro/academy/controller/view/controllers/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5922836">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
           </folding>
         </state>
       </provider>

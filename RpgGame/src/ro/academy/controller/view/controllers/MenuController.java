@@ -3,6 +3,7 @@ package ro.academy.controller.view.controllers;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextArea;
+import ro.academy.controller.battle.Mission;
 import ro.academy.model.base.History;
 import ro.academy.model.heroes.Hero;
 
@@ -28,7 +29,11 @@ public class MenuController extends HomeController implements Initializable{
 
     @FXML
     public void beginAdventure() {
-
+        try {
+            Mission.beginAdventure(hero);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
