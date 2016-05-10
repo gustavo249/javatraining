@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(&quot;https://www.nyfa.edu/student-resources/wp-content/uploads/2015/06/designing-an-rpg-game-1024x576.jpg&quot;); -fx-background-size: 600 400;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.academy.controller.view.controllers.HeroController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="heroName" layoutX="151.0" layoutY="57.0" />
+            <Label layoutX="151.0" layoutY="31.0" text="Name:" />
+            <ChoiceBox fx:id="heroClass" layoutX="151.0" layoutY="116.0" prefWidth="150.0" />
+            <Label layoutX="155.0" layoutY="92.0" text="Class:" />
+            <Button layoutX="151.0" layoutY="175.0" mnemonicParsing="false" onAction="#submitNewHero" text="Enter" />
+            <Button layoutX="226.0" layoutY="175.0" mnemonicParsing="false" onAction="#backToMainScreen" text="Cancel" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(&quot;https://i.ytimg.com/vi/Pq824AM9ZHQ/maxresdefault.jpg&quot;); -fx-background-size: 600 400;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.academy.controller.view.controllers.MenuController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="124.0" layoutY="28.0" prefHeight="230.0" prefWidth="139.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#beginAdventure" text="Begin adventure" />
+                  <Button mnemonicParsing="false" onAction="#saveGame" text="Save game" />
+                  <Button mnemonicParsing="false" onAction="#seeYourHero" text="See your hero" />
+                  <Button mnemonicParsing="false" onAction="#backToMainScreen" text="Cancel" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
