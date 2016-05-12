@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(&quot;https://i.ytimg.com/vi/Pq824AM9ZHQ/maxresdefault.jpg&quot;); -fx-background-size: 600 400;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.academy.controller.view.controllers.BattleController">
+   <center>
+      <AnchorPane prefHeight="173.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" layoutX="196.0" layoutY="41.0" prefHeight="92.0" prefWidth="78.0">
+               <children>
+                  <Label text="Name" />
+                  <Label text="Level" />
+                  <Label text="Hp" />
+                  <Label text="Strength" />
+                  <Label text="Defence" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="300.0" layoutY="41.0" prefHeight="92.0" prefWidth="78.0">
+               <children>
+                  <Label fx:id="monsterName" text="Name" />
+                  <Label fx:id="monsterLevel" text="Level" />
+                  <Label fx:id="monsterHp" text="Hp" />
+                  <Label fx:id="monsterStrength" text="Strength" />
+                  <Label fx:id="monsterDefence" text="Defence" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="106.0" layoutY="41.0" prefHeight="92.0" prefWidth="78.0">
+               <children>
+                  <Label fx:id="heroName" text="Name" />
+                  <Label fx:id="heroLevel" text="Level" />
+                  <Label fx:id="heroHp" text="Hp" />
+                  <Label fx:id="heroStrength" text="Strength" />
+                  <Label fx:id="heroDefence" text="Defence" />
+               </children>
+            </VBox>
+            <Button layoutX="497.0" layoutY="41.0" mnemonicParsing="false" onAction="#backToMenuScreen" text="Back to menu" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <HBox>
+         <children>
+            <Label fx:id="battleOutcome" alignment="TOP_LEFT" prefHeight="89.0" prefWidth="600.0" text="Battle Outcome" BorderPane.alignment="CENTER" />
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <TextArea fx:id="battleReport" opacity="0.36" prefHeight="144.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

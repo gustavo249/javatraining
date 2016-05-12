@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="175.0" prefWidth="375.0" style="-fx-background-image: url(&quot;https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPPaidPJ7bEAn0V_3OlT_3sXohtyY0FJ1W3v7nP-FF9RV_YrCJ&quot;); -fx-background-size: 375 175;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.academy.controller.view.controllers.AdventureController">
+   <children>
+      <Label fx:id="dangerLabel" alignment="TOP_LEFT" layoutX="29.0" layoutY="20.0" prefHeight="81.0" prefWidth="318.0" text="Label" textFill="#edff7b">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="56.0" layoutY="136.0" mnemonicParsing="false" onAction="#fight" text="Fight" />
+      <Button fx:id="closeButton" layoutX="278.0" layoutY="136.0" mnemonicParsing="false" onAction="#run" text="Run" />
+   </children>
+</AnchorPane>

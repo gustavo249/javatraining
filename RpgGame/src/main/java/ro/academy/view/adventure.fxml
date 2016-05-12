@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(&quot;https://i.ytimg.com/vi/Pq824AM9ZHQ/maxresdefault.jpg&quot;); -fx-background-size: 600 400;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.academy.controller.view.controllers.AdventureController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="storyLine" layoutX="32.0" layoutY="18.0" prefHeight="167.0" prefWidth="527.0" text="Label" textFill="WHITE" />
+            <Button layoutX="518.0" layoutY="146.0" mnemonicParsing="false" onAction="#backToMenuScreen" text="Back" />
+            <Button layoutX="436.0" layoutY="146.0" mnemonicParsing="false" onAction="#danger" text="Continue" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="heroName" text="Label" />
+            <Label fx:id="heroClass" alignment="TOP_LEFT" text="Label" />
+            <Label fx:id="level" text="Label" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+   </top>
+</BorderPane>
