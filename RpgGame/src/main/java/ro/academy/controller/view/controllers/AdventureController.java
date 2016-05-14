@@ -36,6 +36,9 @@ public class AdventureController extends HomeController implements Initializable
     private Label level = new Label();
 
     @FXML
+    private Label xp = new Label();
+
+    @FXML
     private Label dangerLabel = new Label();
 
     @Override
@@ -49,6 +52,8 @@ public class AdventureController extends HomeController implements Initializable
         heroName.setText(hero.getName());
         heroClass.setText(hero.getRace().toString());
         level.setText("Level = " + hero.getLevel());
+
+        xp.setText(hero.getActualXp() + " / " + hero.getLevelXp() + " needed");
     }
 
 

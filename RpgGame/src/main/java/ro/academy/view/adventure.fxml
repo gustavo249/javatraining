@@ -21,6 +21,7 @@
             <Label fx:id="heroName" text="Label" />
             <Label fx:id="heroClass" alignment="TOP_LEFT" text="Label" />
             <Label fx:id="level" text="Label" />
+            <Label text="Label" fx:id="xp" />
          </children>
          <opaqueInsets>
             <Insets />
