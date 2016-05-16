@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="dataSource" class="org.apache.tomcat.dbcp.dbcp.BasicDataSource">
+        <property name="username" value="raoul"/>
+        <property name="password" value="cefere" />
+        <property name="url" value="jdbc:mysql://localhost/gamedatabase?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;use??LegacyDatetimeCode=false&amp;serverTimezone=UTC" />
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+    </bean>
+
+    <context:component-scan base-package="ro.academy.model.daos" />
+    <context:component-scan base-package="ro.academy.service" />
+    <context:annotation-config/>
+</beans>
