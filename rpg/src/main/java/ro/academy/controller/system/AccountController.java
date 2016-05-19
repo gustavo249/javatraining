@@ -3,6 +3,7 @@ package ro.academy.controller.system;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import ro.academy.model.accounts.Account;
@@ -21,9 +22,9 @@ public class AccountController {
     private MyService service;
 
     @RequestMapping(value = "/validate", method = RequestMethod.POST)
-    public String validate(@Valid Account user, BindingResult result) {
+    public String validate(@ModelAttribute(value = "user") @Valid Account user, BindingResult result) {
         if (result.hasErrors()) {
-            return "createNewAccount";
+            return "redirect:registration";
         }
         if (foundInDb(user) == null) {
             service.addAccount(user);

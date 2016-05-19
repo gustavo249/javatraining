@@ -20,7 +20,7 @@ public class HomeController {
 
     @RequestMapping("/registration")
     public String register(Model model) {
-        model.addAttribute("account", new Account());
+        model.addAttribute("user", new Account());
         return "createNewAccount";
     }
 
