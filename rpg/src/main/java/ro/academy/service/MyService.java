@@ -23,14 +23,14 @@ public class MyService {
     }
 
 
-    public Account getAccount(String username) {
-        return accountsDAO.findOne(username);
-    }
+//    public Account getAccount(String username) {
+//        return accountsDAO.findOne(username);
+//    }
 
-
-    public void delete(String username) {
-         accountsDAO.delete(username);
-    }
+//
+//    public void delete(String username) {
+//         accountsDAO.delete(username);
+//    }
 
 
 

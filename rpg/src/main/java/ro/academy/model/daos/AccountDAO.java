@@ -9,5 +9,5 @@ import ro.academy.model.accounts.Account;
  */
 
 @Repository
-public interface AccountDAO extends JpaRepository<Account, String> {
+public interface AccountDAO extends JpaRepository<Account, Long> {
 }

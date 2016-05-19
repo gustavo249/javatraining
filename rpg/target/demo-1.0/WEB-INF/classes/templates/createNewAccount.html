@@ -1,6 +1,6 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -82,7 +82,7 @@
                     <!--The four main pages which are to be displayed in the right block-->
                     <div id="story" style="">
                         <div style="width: 500px; clear: both;">
-                            <form th:action="@{/validate}" method="post" th:object="${user}">
+                            <form action="#" th:action="@{/validate}" method="post" th:object="${user}">
                                 Username: <input th:field="*{username}" type="text" /><br/>
                                 <label th:if="${#fields.hasErrors('username')}" th:errors="*{username}">Username Error</label>
                                 Password: <input th:field="*{password}" type="password" placeholder="Password"/> <br/>
@@ -90,7 +90,7 @@
                                 Repeat pwd: <input type="password" placeholder="Confirm Password"
                                                       id="confirm_password"/> <br/>
                                 Full name: <input th:field="*{name}" type="text"/> <br/>
-                                <label th:if="${#fields.hasErrors('name'}" th:errors="*{name}">Name error</label>
+                                <label th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name error</label>
                                 Email: <input th:field="*{email}" type="text"/> <br/>
                                 <label th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</label>
                                 <input type="submit" class="pure-button pure-button-primary" value="Confirm" />
